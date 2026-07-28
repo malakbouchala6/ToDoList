@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html/tasks.html">My Tasks</a></li>
+          <li><a href="html/projects.html">My Projects</a></li>
+          <li><a href="html/about.html">About</a></li>
+          <li><a href="html/login.html">Login</a></li>
+          <li><a href="html/signup.html">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <p id="greeting">test</p>
+
+        <h1>Organize your tasks efficiently</h1>
+
+        <p>
+          This simple To-Do List application helps you manage your daily tasks
+          and projects.
+        </p>
+
+        <button>Start Now</button>
+      </section>
+
+      <section>
+        <h2>My Tasks</h2>
+
+        <ul class="task-list" id="taskList">
+          <li class="task">
+            <input type="checkbox" />
+            <span class="task-title">Finish HTML Lab</span>
+            <span class="task-date">May 10</span>
+            <span class="task-priority">High</span>
+            <button class="delete-btn">Delete</button>
+          </li>
+
+          <li class="task">
+            <input type="checkbox" />
+            <span class="task-title">Prepare Presentation</span>
+            <span class="task-date">May 12</span>
+            <span class="task-priority">Medium</span>
+            <button class="delete-btn">Delete</button>
+          </li>
+
+          <li class="task">
+            <input type="checkbox" />
+            <span class="task-title">Study PHP</span>
+            <span class="task-date">May 15</span>
+            <span class="task-priority">Low</span>
+            <button class="delete-btn">Delete</button>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Add New Task</h2>
+
+        <form id="taskForm" class="inline-form">
+          <div>
+            <label>Task Title:</label>
+            <input type="text" id="taskTitle" placeholder="Task title" />
+          </div>
+
+          <div>
+            <label>Due Date:</label>
+            <input type="date" id="taskDate" />
+          </div>
+
+          <div>
+            <label>Priority:</label>
+            <select id="taskPriority">
+              <option>Low</option>
+              <option>Medium</option>
+              <option>High</option>
+            </select>
+          </div>
+
+          <div>
+            <label> <br /></label>
+            <input type="submit" value="Add Task" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>2026 – Web Development Course</p>
+
+      <nav>
+        <a href="index.html">Home</a> | <a href="projects.html">Projects</a> |
+        <a href="about.html">About</a>
+      </nav>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
